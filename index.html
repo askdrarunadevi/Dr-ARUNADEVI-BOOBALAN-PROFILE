@@ -79,6 +79,24 @@
       color: var(--muted);
     }
     .nav-links a:hover { color: var(--primary); }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 12px;
+      border: 1px solid rgba(123, 91, 56, 0.18);
+      border-radius: 10px;
+      color: var(--primary-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+    .header-actions a:hover { background: rgba(123, 91, 56, 0.08); }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -140,6 +158,20 @@
       max-width: 650px;
       font-size: 1.02rem;
       color: var(--muted);
+    }
+    .contact-email {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--primary-dark);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .availability {
+      margin-top: 18px !important;
+      padding-left: 14px;
+      border-left: 3px solid var(--secondary);
+      font-size: 0.96rem !important;
     }
     .cta-row {
       display: flex;
@@ -373,6 +405,7 @@
       }
       .portrait img { height: 480px; }
       .nav-links { display: none; }
+      .header-actions { display: none; }
     }
   </style>
 </head>
@@ -396,6 +429,10 @@
           <a href="#credentials">Credentials</a>
           <a href="#contact">Contact</a>
         </div>
+        <div class="header-actions" aria-label="Quick contact links">
+          <a href="https://www.linkedin.com/in/dr-arunadevi-boobalan" target="_blank" rel="noopener" aria-label="Dr. Arunadevi Boobalan on LinkedIn">in LinkedIn</a>
+          <a href="https://wa.me/918778183492" target="_blank" rel="noopener" aria-label="WhatsApp Dr. Arunadevi Boobalan">&#128172; WhatsApp</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -410,8 +447,11 @@
           <p>
             Compassionate and detail-oriented Dental Surgeon with 7+ years of experience in restorative, cosmetic, and preventive dentistry. Committed to delivering high-quality, patient-centered care and contributing clinical expertise and leadership in a progressive healthcare environment.
           </p>
+          <a class="contact-email" href="mailto:arunaboobalan31@gmail.com">arunaboobalan31@gmail.com</a>
+          <p class="availability"><strong>Available for:</strong> Clinic leadership roles, senior dental surgeon roles, professional collaborations, and community dental camps.</p>
           <div class="cta-row">
             <a class="btn secondary" href="https://wa.me/918778183492" target="_blank" rel="noopener">WhatsApp +91 8778183492</a>
+            <a class="btn primary" href="assets/Dr.ARUNADEVI_BOOBALAN_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
           </div>
           <ul class="mini-list">
             <li>Restorative dentistry</li>
@@ -447,6 +487,33 @@
         <div class="stat">
           <strong>Collaboration</strong>
           <span>With multiple organizations</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <h2>Key achievements</h2>
+          <p>A concise view of clinical experience, leadership, recognition, and community contribution.</p>
+        </div>
+        <div class="credentials-grid">
+          <div class="credential-box">
+            <strong>7+ Years of Clinical Experience</strong>
+            <span>Experience across restorative, cosmetic, preventive, and endodontic dental care.</span>
+          </div>
+          <div class="credential-box">
+            <strong>10–20 Patients Daily</strong>
+            <span>Managed high-volume patient care across general and advanced dental treatments.</span>
+          </div>
+          <div class="credential-box">
+            <strong>6 Community Dental Camps</strong>
+            <span>Participated in dental awareness, screening, and preventive-care initiatives.</span>
+          </div>
+          <div class="credential-box">
+            <strong>Best Employee &amp; Performer</strong>
+            <span>Recognized at Sha Dental Care &amp; Implant Center for clinical performance and patient satisfaction.</span>
+          </div>
         </div>
       </div>
     </section>
